@@ -49,14 +49,18 @@ These results demonstrate that <b>time series forecasting techniques (Box-Cox + 
 
 <h2>Results Visualization</h2>
 
-- <b>Diagnostic Plots</b>
-  - Histogram and Q-Q plots of residuals confirmed approximate normality
-  - ACF/PACF plots of residuals showed no significant autocorrelations
-  - Residual time series showed no trend or seasonality 
-- <b>Forecasting Plots:</b>
-  - Forecasted values (with 95% confidence intervals) tracked closely with actual expenditures
-  - Zoomed-in view of the test set (last 10 quarters) demonstrated strong predictive accuracy
-  - True expenditure values consistently fell within forecast confidence bands
+- <b>Transformation Checks:</b>
+  - Histograms before and after the Box-Cox transformation showed how the variance stabilized and data became closer to normal.
+  - Differenced time series plots (lag 1 and lag 4) clearly removed the upward trend and seasonal pattern.
+- <b>Model Identification:</b>
+  - ACF and PACF plots provided visual evidence of seasonal correlations, guiding SARIMA parameter selection.
+- <b>Diagnostics:</b>
+  - Residual histograms and Q–Q plots indicated approximate normality.
+  - ACF/PACF of residuals confirmed independence, with no significant autocorrelation.
+  - Residual time series plots showed white noise behavior.
+ - <b>Forecasting Performance:</b>
+   - Forecast plots with 95% confidence intervals demonstrated that predicted values tracked actual expenditures closely.
+   - A zoomed-in forecast vs. test set overlay (last 10 quarters) showed actual values consistently within forecast bands, validating the SARIMA(0,1,0)(0,1,1)<sub>4</sub> model’s predictive accuracy.
 
 These results illustrate that the <b>SARIMA(0,1,0)(0,1,1)<sub>4</sub> model captured both trend and seasonality effectively</b>, making it a strong candidate for forecasting economic time series data.
 
