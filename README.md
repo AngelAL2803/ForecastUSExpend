@@ -62,11 +62,9 @@ These results illustrate that the <b>SARIMA(0,1,0)(0,1,1)<sub>4</sub> model capt
 
 <h2>Project Structure</h2>
 
-- <b>`PSTATW174_FinalProject.pdf`</b> → Full project report, including methods, results, visualizations, and discussion
+- <b>`ForecastUSExpend.pdf`</b> → Full project report, including methods, results, visualizations, and discussion (pdf)
 - <b>`forecasting_code.Rmd`</b> → R Markdown file with all analysis steps (data transformation, modeling, diagnostics, forecasting)
-- <b>`forecasting_output.html`</b> → Knit HTML output of the analysis (for quick review)
-- <b>`plots`/</b> → Folder with diagnostic plots and forecast visualizations
-- <b>`README.md`</b> → Project overview (this file)
+- <b>`ForecastUSExpend.html`</b> → Full project report, including methods, results, visualizations, and discussion (pdf)
  
 <!--
  ```diff
